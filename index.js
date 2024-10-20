@@ -9,9 +9,9 @@ const { autoUpdater } = require('electron-updater');
 let win;
 let tray = null;
 let clipboardQueue = [];
-let clipboardQueueLimit = 50; // limit to 100 items, you can change this to any desired value
+let clipboardQueueLimit = 100; // limit to 100 items, you can change this to any desired value
 let copiedHistory = []; // to store the last 10 copied items
-const copiedHistoryLimit = 50; // limit to 10 items, you can change this to any desired value
+const copiedHistoryLimit = 100; // limit to 10 items, you can change this to any desired value
 let previousClip = '';  // to store the previous clipboard content
 let overlay;
 let overlayTimeout; // Declare this outside the showOverlay function
